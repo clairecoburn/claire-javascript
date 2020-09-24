@@ -80,6 +80,35 @@
 
       let try06 = makeName("Michelle", "Kimberly", "Coburn");
       console.log(try06)
+
+      console.log("Working with Objects:");
+
+      var person = {
+        firstName: "Claire",
+        lastName: "Coburn",
+        age: "21",
+      };
+
+      person.firstName;
+      console.log(firstName);
+
+      person.lastName;
+      console.log(lastName);
+
+      person.age;
+      console.log(person.age);
+
+      var person = {
+        firstName: "Claire",
+        lastName: "Coburn",
+        age: "21",
+        fullName : function () {
+          return this.firstName + " " + this.lastName;
+        }
+      };
+
+      person.fullName();
+      console.log(person.fullName());
   </script>
 </body>
 </html>
